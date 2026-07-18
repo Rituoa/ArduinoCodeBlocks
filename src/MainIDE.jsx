@@ -147,7 +147,7 @@ export default function MainIDE({ user, onLogout }) {
   return (
     <div className="app-container">
       <div className="top-bar">
-        <h2>🤖 Robonist <span className="greeting">Hi, {user.username}! 👋</span></h2>
+        <h2>🤖 ArduBLOCK- by Ritesh <span className="greeting">Hi, {user.username}! 👋</span></h2>
         <div className="top-bar-actions">
           <button onClick={() => setMode(mode === 'hardware' ? 'simulator' : mode === 'simulator' ? 'sprite' : 'hardware')} className="action-btn purple">
             🎮 {mode === 'hardware' ? 'Play Mode' : 'Build Mode'}
