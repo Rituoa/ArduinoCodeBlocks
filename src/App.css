@@ -1,0 +1,101 @@
+/* ==========================================
+   KID-FRIENDLY GAMIFIED UI/UX REDESIGN
+   ========================================== */
+
+/* The Main App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Quicksand', 'Comic Sans MS', 'Inter', sans-serif;
+  background-color: #e0f2fe; /* Soft sky blue */
+}
+
+/* --- THE HEADER --- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 15px 24px;
+  border-bottom: 4px solid #cbd5e1; /* Chunky 3D border */
+  z-index: 10;
+}
+
+/* The Title & Greeting */
+.top-bar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #FF6680; /* Playful Pink */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-bar h2 .greeting {
+  color: #0ea5e9; 
+  background-color: #e0f2fe;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 1rem;
+  border: 2px solid #bae6fd;
+}
+
+/* --- THE BUTTONS (GAMIFIED) --- */
+.top-bar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.action-btn {
+  border-radius: 14px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+}
+
+/* 3D Push Effect */
+.action-btn:active {
+  transform: translateY(4px);
+}
+
+/* Button Colors */
+.action-btn.purple { background-color: #a78bfa; color: white; border: 2px solid #8b5cf6; box-shadow: 0 4px 0px #7c3aed; }
+.action-btn.purple:active { box-shadow: 0 0px 0px #7c3aed; }
+
+.action-btn.yellow { background-color: #fbbf24; color: white; border: 2px solid #f59e0b; box-shadow: 0 4px 0px #d97706; }
+.action-btn.yellow:active { box-shadow: 0 0px 0px #d97706; }
+
+.action-btn.orange { background-color: #fb923c; color: white; border: 2px solid #f97316; box-shadow: 0 4px 0px #ea580c; }
+.action-btn.orange:active { box-shadow: 0 0px 0px #ea580c; }
+
+.action-btn.green { background-color: #4ade80; color: white; border: 2px solid #22c55e; box-shadow: 0 4px 0px #16a34a; }
+.action-btn.green:active { box-shadow: 0 0px 0px #16a34a; }
+
+.action-btn.blue { background-color: #38bdf8; color: white; border: 2px solid #0ea5e9; box-shadow: 0 4px 0px #0284c7; }
+.action-btn.blue:active { box-shadow: 0 0px 0px #0284c7; }
+
+.action-btn.red { background-color: #f43f5e; color: white; border: 2px solid #e11d48;box-shadow: 0 4px 0px #be123c;}
+.action-btn.red:active { box-shadow: 0 0px 0px #be123c;}
+
+/* --- THE CODE OUTPUT PANEL --- */
+.code-panel {
+  width: 320px;
+  background-color: #0f172a; 
+  color: #38bdf8; /* Neon blue text like a sci-fi toy */
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 4px solid #cbd5e1;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
