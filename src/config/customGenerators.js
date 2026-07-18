@@ -8,7 +8,7 @@ export const defineCustomGenerators = () => {
   };
 
   javascriptGenerator.finish = function(code) {
-    return code; // Prevent default wrapping, we handle it in MainIDE
+    return code; // Prevent default wrapping,handled it in MainIDE
   };
 
   // GENERATORS

@@ -4,7 +4,6 @@ import 'blockly/blocks';
 import { javascriptGenerator } from 'blockly/javascript';
 import WokwiSimulator from './WokwiSimulator';
 
-// Import our new clean config files!
 import { PUZZLE_DATABASE } from './config/puzzleDatabase';
 import { toolbox } from './config/toolbox';
 import { defineCustomBlocks } from './config/customBlocks';

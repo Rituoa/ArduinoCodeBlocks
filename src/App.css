@@ -1,6 +1,6 @@
-/* ==========================================
-   KID-FRIENDLY GAMIFIED UI/UX REDESIGN
-   ========================================== */
+/* ===========================
+   KID-FRIENDLY GAMIFIED UI/UX 
+   =========================== */
 
 /* The Main App Container */
 .app-container {
@@ -27,7 +27,7 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: 900;
-  color: #FF6680; /* Playful Pink */
+  color: #FF6680;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -43,7 +43,7 @@
   border: 2px solid #bae6fd;
 }
 
-/* --- THE BUTTONS (GAMIFIED) --- */
+/* --- THE BUTTONS --- */
 .top-bar-actions {
   display: flex;
   gap: 12px;
@@ -87,11 +87,12 @@
 .action-btn.red { background-color: #f43f5e; color: white; border: 2px solid #e11d48;box-shadow: 0 4px 0px #be123c;}
 .action-btn.red:active { box-shadow: 0 0px 0px #be123c;}
 
-/* --- THE CODE OUTPUT PANEL --- */
+/*CODE PANEL*/
+
 .code-panel {
   width: 320px;
   background-color: #0f172a; 
-  color: #38bdf8; /* Neon blue text like a sci-fi toy */
+  color: #38bdf8;
   padding: 20px;
   overflow-y: auto;
   border-left: 4px solid #cbd5e1;

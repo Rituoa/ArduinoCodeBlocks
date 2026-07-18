@@ -245,8 +245,6 @@ export default function WokwiSimulator({ arduinoCode }) {
                  {comp.type === 'buzzer' && <wokwi-buzzer ref={el => componentRefs.current[comp.id] = el}></wokwi-buzzer>}
                  {comp.type === 'button' && <div onMouseDown={() => inputStates.current[comp.pin] = true} onMouseUp={() => inputStates.current[comp.pin] = false} onMouseLeave={() => inputStates.current[comp.pin] = false} style={{ cursor: 'pointer' }}><wokwi-pushbutton color="blue"></wokwi-pushbutton></div>}
                  {comp.type === 'switch' && <div onClick={(e) => { inputStates.current[comp.pin] = !inputStates.current[comp.pin]; e.currentTarget.querySelector('wokwi-slide-switch').value = inputStates.current[comp.pin]; }} style={{ cursor: 'pointer' }}><wokwi-slide-switch></wokwi-slide-switch></div>}
-                 
-                 {/* THE FIX: Render the 3D Knob AND a guaranteed HTML Slider underneath it! */}
                  {comp.type === 'potentiometer' && (
                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
                      <wokwi-potentiometer></wokwi-potentiometer>
@@ -316,18 +314,6 @@ export default function WokwiSimulator({ arduinoCode }) {
           </div>
         )}
       </div>
-
-{/*      <div style={{ height: '180px', backgroundColor: '#1e293b', borderTop: '4px solid #0f172a', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ padding: '8px 15px', backgroundColor: '#0f172a', color: '#94a3b8', fontSize: '12px', fontWeight: 'bold', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span>💻 Serial Monitor (9600 baud)</span>
-          <button onClick={() => setSerialOutput("")} style={{ background: 'transparent', border: '1px solid #475569', color: '#cbd5e1', borderRadius: '4px', cursor: 'pointer', padding: '2px 8px', fontSize: '11px' }}>Clear</button>
-        </div>
-        <div style={{ flex: 1, padding: '10px 15px', overflowY: 'auto', color: '#22c55e', fontFamily: 'monospace', fontSize: '14px', whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
-          {serialOutput || <span style={{ color: '#475569' }}>Waiting for serial data...</span>}
-          <div ref={consoleEndRef} />
-        </div>
-      </div>
-*/}
     </div>
   );
 }
