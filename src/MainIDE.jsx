@@ -143,10 +143,28 @@ export default function MainIDE({ user, onLogout }) {
     URL.revokeObjectURL(url);
   };
 
+  const handleRunSprite = () => {
+  if (!workspaceRef.current) return;
+  
+  try {
+    // Translate the blocks into JavaScript strings
+    const code = javascriptGenerator.workspaceToCode(workspaceRef.current);
+    
+    console.log("Executing Sprite Code:", code);
+    
+    // Execute the code directly in the app!
+    const executeSprite = new Function(code);
+    executeSprite();
+
+  } catch (error) {
+    alert("Oops! There was an error running your sprite: " + error.message);
+  }
+};
+
   return (
     <div className="app-container">
       <div className="top-bar">
-        <h2>🤖 ArduBLOCK- by Ritesh <span className="greeting">Hi, {user.username}! 👋</span></h2>
+        <h2>🤖 RoboBLOCK- by Ritesh <span className="greeting">Hi, {user.username}! 👋</span></h2>
         <div className="top-bar-actions">
           <button onClick={() => setMode(mode === 'hardware' ? 'simulator' : mode === 'simulator' ? 'sprite' : 'hardware')} className="action-btn purple">
             🎮 {mode === 'hardware' ? 'Play Mode' : 'Build Mode'}
@@ -156,6 +174,14 @@ export default function MainIDE({ user, onLogout }) {
           <button onClick={loadProjectFromDatabase} className="action-btn blue">☁️ Load</button>
           <button onClick={saveProjectToDatabase} className="action-btn green">💾 Save</button>
           <button onClick={onLogout} className='action-btn red'>🚪Exit</button>
+          {mode === 'sprite' && (
+          <button 
+            onClick={handleRunSprite}
+            className="run-sprite-btn"
+          >
+            ▶ Run Sprite
+          </button>
+        )}
         </div>
       </div>
 

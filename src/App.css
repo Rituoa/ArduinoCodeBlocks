@@ -100,3 +100,23 @@
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+.run-sprite-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inherit;
+  box-shadow: 0 5px 0 #c27600;
+  transition: all 0.1s ease;
+}
+
+.run-sprite-btn:active {
+  transform: translateY(5px);
+  box-shadow: 0 0px 0 #c27600;
+}
