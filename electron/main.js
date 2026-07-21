@@ -35,10 +35,10 @@ function startBackend() {
 // 2. Setup the Desktop Window
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1280,
-    height: 800,
+    width: 1920,
+    height: 1080,
     autoHideMenuBar: true, // Hides File/Edit/View menu
-    icon: path.join(__dirname, '../public/vite.svg'), // Optional: Add a custom icon later
+    icon: path.join(__dirname, '../public/app-logo.png'), // Optional: Add a custom icon later
     webPreferences: {
       nodeIntegration: true,
     }

@@ -1,0 +1,23 @@
+{
+    "appId": "com.github.com/Rituoa",
+    "productName": "RoboIDE-by Ritesh",
+    "copyright": "Copyright © 2026 Ritesh Wankhede",
+    "directories": {
+        "output": "release"
+    },
+    "files": [
+        "dist/**/*",
+        "electron/**/*",
+        "package.json"
+    ],
+    "win": {
+        "target": "nsis",
+        "icon": "build/icon.ico"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "installerIcon": "build/icon.ico",
+        "uninstallerIcon": "build/icon.ico"
+    }
+}

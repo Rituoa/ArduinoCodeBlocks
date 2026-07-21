@@ -1,5 +1,7 @@
 {
   "name": "arduinocodeblocks",
+  "description": "Virtual Robotics Lab",
+  "author": "Ritesh Wankhede",
   "private": true,
   "version": "1.0.0",
   "type": "commonjs",
@@ -8,34 +10,25 @@
     "dev": "vite",
     "server": "json-server --watch db.json --port 5000",
     "react:build": "vite build",
-    "app:dist": "npm run react:build && electron-builder"
+    "app:dist": "npm run react:build && electron-builder --config electron-builder.json"
   },
   "dependencies": {
-    "@wokwi/elements": "^... (keep your versions)",
-    "avr8js": "^...",
-    "blockly": "^...",
+    "@wokwi/elements": "^1.9.2",
+    "avr8js": "^0.21.0",
+    "blockly": "^13.1.1",
     "http-proxy-middleware": "^3.0.0",
     "json-server": "^0.17.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "electron": "^31.3.1",
-    "electron-builder": "^24.13.3",
-    "vite": "^5.4.1"
+    "@vitejs/plugin-react": "^6.0.3",
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3",
+    "vite": "^8.1.5"
   },
-  "build": {
-    "appId": "com.robonist.ardublock",
-    "productName": "Robonist IDE",
-    "directories": {
-      "output": "release/"
-    },
-    "win": {
-      "target": "nsis"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    }
+  "allowScripts": {
+    "electron@31.7.7": true,
+    "esbuild@0.21.5": true
   }
 }

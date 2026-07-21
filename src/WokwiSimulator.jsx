@@ -66,7 +66,7 @@ export default function WokwiSimulator({ arduinoCode }) {
     setSerialOutput("");
 
     try {
-      const response = await fetch('/wokwi-api/build', {
+      const response = await fetch('http://localhost:5000/wokwi-api/build', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ sketch: arduinoCode })
