@@ -1,16 +1,12 @@
-# React + Vite
+# 🤖 Robonist IDE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Robonist IDE is a highly professional yet kid-friendly educational platform designed to help young learners develop critical thinking and autonomous problem-solving skills. By combining visual block-based programming with real hardware simulation, users can seamlessly transition from learning basic logic to writing actual robotics code.
 
-Currently, two official plugins are available:
+### ✨ Key Features
+* **Interactive Learning Missions:** Built-in levels and missions guide users step-by-step, helping them get familiar with the app's dynamics and coding concepts at their own pace.
+* **Blockly Integration:** Utilizes the Google Blockly library for intuitive, drag-and-drop visual programming.
+* **Sprite Mode:** An interactive visual playground where kids can see their block logic come to life instantly.
+* **Hardware Simulation:** Features on-platform simulation of Arduino hardware and code integration powered by Wokwi.
+* **Direct Arduino Export:** Seamlessly exports the visual block logic into true, compatible Arduino C++ code so users can program real-world microcontrollers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Tech Stack:** React, Electron, Blockly, and Wokwi API.
