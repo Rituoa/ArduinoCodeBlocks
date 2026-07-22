@@ -32,13 +32,13 @@ export default function MainIDE({ user, onLogout }) {
     if (workspaceRef.current) {
       const blocksJson = Blockly.serialization.workspaces.save(workspaceRef.current);
       const newSaveFile = { ownerId: user.id, projectName: `${user.username}'s Robot Project`, data: blocksJson, timestamp: new Date().toISOString() };
-      await fetch('http://localhost:5000/projects', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(newSaveFile) });
+      await fetch('/api/projects', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(newSaveFile) });
       alert(`Saved! Open db.json in VS Code to see your data! 💾`);
     }
   };
 
   const loadProjectFromDatabase = async () => {
-    const res = await fetch(`http://localhost:5000/projects?ownerId=${user.id}`);
+    const res = await fetch(`/api/projects?ownerId=${user.id}`);
     const userProjects = await res.json();
     if (userProjects.length > 0) {
       const latestProject = userProjects[userProjects.length - 1];

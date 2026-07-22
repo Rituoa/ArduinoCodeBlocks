@@ -33,18 +33,18 @@ export default function App() {
     setError('');
     try {
       if (isSignUpMode) {
-        const checkRes = await fetch(`http://localhost:5000/users?username=${username}`);
+        const checkRes = await fetch(`/api/users?username=${username}`);
         const existingUsers = await checkRes.json();
         if (existingUsers.length > 0) return setError('Username is already taken. Pick another!');
 
         const newUser = { username, password, role: 'Student' };
-        const createRes = await fetch('http://localhost:5000/users', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(newUser) });
+        const createRes = await fetch('/api/users', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(newUser) });
         const savedUser = await createRes.json();
         
         if (rememberMe) localStorage.setItem('robonist_session', JSON.stringify(savedUser));
         setCurrentUser(savedUser); 
       } else {
-          const loginRes = await fetch(`http://localhost:5000/users?username=${username}`);
+          const loginRes = await fetch(`/api/users?username=${username}`);
           const foundUsers = await loginRes.json();
           if (foundUsers.length > 0) {
             const matchedUser = foundUsers.find(u => u.password === password);
