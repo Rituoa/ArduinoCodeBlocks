@@ -11,6 +11,18 @@
       "password": "test",
       "role": "Student",
       "id": "4YfM_bEKEOo"
+    },
+    {
+      "username": "test",
+      "password": "1234",
+      "role": "Student",
+      "id": "W1Ul1K9"
+    },
+    {
+      "username": "Ritesh",
+      "password": "1234",
+      "role": "Student",
+      "id": "SnXoACJ"
     }
   ],
   "projects": [
@@ -282,6 +294,209 @@
       },
       "timestamp": "2026-07-17T08:21:39.866Z",
       "id": "yIZi8OKgBcs"
+    },
+    {
+      "ownerId": "W1Ul1K9",
+      "projectName": "test's Robot Project",
+      "data": {},
+      "timestamp": "2026-07-22T07:06:35.852Z",
+      "id": "27ELMqu"
+    },
+    {
+      "ownerId": "SnXoACJ",
+      "projectName": "Ritesh's Robot Project",
+      "data": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "controls_if",
+              "id": "qsDXy)0][CpDk2@ZJ,*F",
+              "x": 70,
+              "y": 170,
+              "extraState": {
+                "hasElse": true
+              },
+              "inputs": {
+                "IF0": {
+                  "block": {
+                    "type": "is_digital_pin",
+                    "id": "V%0]|b}6_lB6jG)nlKqV",
+                    "fields": {
+                      "PIN": "2",
+                      "STATE": "HIGH"
+                    }
+                  }
+                },
+                "DO0": {
+                  "block": {
+                    "type": "turn_led",
+                    "id": "/[V%Y_Mp6#BTAB[[,]f{",
+                    "fields": {
+                      "PIN": "11",
+                      "STATE": "HIGH"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "arduino_delay",
+                        "id": ":vN2nGb$/ID)/5[_egNp",
+                        "inputs": {
+                          "MS": {
+                            "shadow": {
+                              "type": "math_number",
+                              "id": ";$i/o~Gl_M!qT+7j5.+Q",
+                              "fields": {
+                                "NUM": 1000
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "turn_led",
+                            "id": "_7$SErc:?%w*?w%=Y?92",
+                            "fields": {
+                              "PIN": "12",
+                              "STATE": "HIGH"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "arduino_delay",
+                                "id": "*[fmV$e/iMJp~q6zm0aD",
+                                "inputs": {
+                                  "MS": {
+                                    "shadow": {
+                                      "type": "math_number",
+                                      "id": "Lc,8x=+#L!/msEN-)V8r",
+                                      "fields": {
+                                        "NUM": 1000
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "turn_led",
+                                    "id": "[VymQ#:$3|R^ze{)=C5}",
+                                    "fields": {
+                                      "PIN": "13",
+                                      "STATE": "HIGH"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "arduino_delay",
+                                        "id": "@:xt8h|J370YC;aL,hAg",
+                                        "inputs": {
+                                          "MS": {
+                                            "shadow": {
+                                              "type": "math_number",
+                                              "id": "n+fN]a,NT6v!2%|ifHmJ",
+                                              "fields": {
+                                                "NUM": 1000
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ELSE": {
+                  "block": {
+                    "type": "turn_led",
+                    "id": ",O{2tBGbn)//9VFF0o-z",
+                    "fields": {
+                      "PIN": "13",
+                      "STATE": "LOW"
+                    },
+                    "next": {
+                      "block": {
+                        "type": "arduino_delay",
+                        "id": "+M)A=8uvEPe*n/q(?Zt+",
+                        "inputs": {
+                          "MS": {
+                            "shadow": {
+                              "type": "math_number",
+                              "id": "0+HX,o^GBsgQsBSs/St4",
+                              "fields": {
+                                "NUM": 1000
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "turn_led",
+                            "id": "$`kHrL$:OhKeB/~hhbU5",
+                            "fields": {
+                              "PIN": "12",
+                              "STATE": "LOW"
+                            },
+                            "next": {
+                              "block": {
+                                "type": "arduino_delay",
+                                "id": "2Qq[D3;.ImlCBc(2)b31",
+                                "inputs": {
+                                  "MS": {
+                                    "shadow": {
+                                      "type": "math_number",
+                                      "id": "aqcg_(4ADf3PZ^ZqDvxC",
+                                      "fields": {
+                                        "NUM": 1000
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "turn_led",
+                                    "id": "tyn(tqlO`l);NBsmFU9i",
+                                    "fields": {
+                                      "PIN": "11",
+                                      "STATE": "LOW"
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "arduino_delay",
+                                        "id": "THeX}f!XS~-%vSaA)v{/",
+                                        "inputs": {
+                                          "MS": {
+                                            "shadow": {
+                                              "type": "math_number",
+                                              "id": "Irusu$Zp(D/)-7zouTwL",
+                                              "fields": {
+                                                "NUM": 1000
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "timestamp": "2026-07-22T07:10:07.440Z",
+      "id": "ZJvDtLw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
