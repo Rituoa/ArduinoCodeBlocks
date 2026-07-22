@@ -1,6 +1,6 @@
 # 🤖 Robo IDE
 
-Robonist IDE is a highly professional yet kid-friendly educational platform designed to help young learners develop critical thinking and autonomous problem-solving skills. By combining visual block-based programming with real hardware simulation, users can seamlessly transition from learning basic logic to writing actual robotics code by simply dragging the required block to the playground.
+Robo IDE is a highly professional yet kid-friendly educational platform designed to help young learners develop critical thinking and autonomous problem-solving skills. By combining visual block-based programming with real hardware simulation, users can seamlessly transition from learning basic logic to writing actual robotics code by simply dragging the required block to the playground.
 
 ### ✨ Key Features
 * **Interactive Learning Missions:** Built-in levels and missions guide users step-by-step, helping them get familiar with the app's dynamics and coding concepts at their own pace.
