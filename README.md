@@ -1,4 +1,4 @@
-# 🤖 Robonist IDE
+# 🤖 Robo IDE
 
 Robonist IDE is a highly professional yet kid-friendly educational platform designed to help young learners develop critical thinking and autonomous problem-solving skills. By combining visual block-based programming with real hardware simulation, users can seamlessly transition from learning basic logic to writing actual robotics code by simply dragging the required block to the playground.
 
